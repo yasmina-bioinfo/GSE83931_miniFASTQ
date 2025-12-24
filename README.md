@@ -66,6 +66,9 @@ To address this, the analysis was performed under **Linux using Windows Subsyste
   - CTRL (control)
   - TREAT (treated)
 - Contrast tested: TREAT vs CTRL
+  
+To reduce computational load and memory usage, a limited subset of samples was selected for analysis (1 male and 1 female at each time point). 
+This choice enables local RNA-seq processing on a personal computer but reduces statistical power.
 
 ---
 
@@ -110,7 +113,8 @@ For maximum stability (recommended on laptops / WSL):
 - The pipeline rebuilds tx2gene automatically from the GENCODE FASTA if missing.
 - Transcript identifiers are kept consistent with the Salmon index (GENCODE-style IDs).
 - All steps are fully scripted; no results depend on interactive R history.
-
+  
+The analysis was designed to be reproducible on standard personal hardware with limited RAM.
 ---
 
 ## Purpose of this project
